@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无限轮播</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 600px;
+            height: 200px;
+            margin:  200px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .main-ul{
+                list-style: none;
+                width: 1800;
+                height: 100%;
+                animation: move 3s linear infinite;
+                position: absolute;
+                background-color:#000;
+            }
+            li{
+                width: 300px;
+                height: 200px;
+                float: left;
+            }
+            .sub-li1{
+                background-color:green;
+            }
+            .sub-li2{
+                background-color:blue;  
+            }
+            .sub-li3{
+                background-color: aqua;
+            }
+            .sub-li4{
+                background-color:pink;
+            }
+
+            .main-ul:hover{
+                animation-play-state:paused;
+                
+            }
+            .main-ul:hover li{
+                opacity: 0.5;
+            }
+            li:hover{
+                opacity: 1;
+            }
+
+@keyframes move{
+    from{
+        left: 0;
+    }
+    to{
+        left: -600px;
+    }
+}
+
+</style>
+
+</head>    
+<body>
+    <div class="box"> 
+        <ul class="main-ul">
+            <li class= sub-li1></li>
+            <li class= sub-li2></li>
+            <li class= sub-li3></li>
+            <li class= sub-li4></li>
+             <li class= sub-li1></li>
+            <li class= sub-li2></li>
+        </ul>
+    </div>
+</body>
+
+</html>

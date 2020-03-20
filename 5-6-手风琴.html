@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴效果</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 960px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        
+        .li-1{
+            background-color: green;
+        }
+        .li-2{
+            background-color: aqua;
+        }
+        .li-3{
+            background-color: beige;  
+        }
+        .li-4{
+            background-color:blue;  
+        }
+        .li-5{
+            background-color:violet;  
+        }
+        .li-6{
+            background-color:black;  
+        }
+        li{
+            list-style: none;
+            width: 160px;
+            height: 300px;
+            float: left;
+            transition: all 0.5s;
+        }
+        ul:hover li{
+            width: 100px;
+        }
+        ul li:hover{
+            width: 460px;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li class="li-1"></li>
+        <li class="li-2"></li>
+        <li class="li-3"></li>
+        <li class="li-4"></li>
+        <li class="li-5"></li>
+        <li class="li-6"></li>
+    </ul>
+</body>
+</html>

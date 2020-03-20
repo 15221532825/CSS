@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画属性</title>
+    <style>
+        .box{
+
+            /*设置动画名称  实现动画 设置动画时长 */
+            width: 100px;
+            height: 100px;
+            background-color:red;
+            animation-name: move;
+            animation-duration: 3s;
+            /* 设置动画播放次数 */
+            animation-iteration-count: 3;
+            /* 设置动画要不要翻转 */
+            /* animation-direction: alternate; */
+            /* 设置动画路径样式 */
+            animation-timing-function: ease-in-out;
+            position: absolute;
+            /* 当动画播放完成之后保持的状态 */
+            animation-fill-mode: forwards;
+        }
+        
+    /* 实现动画  必须要用@keyframes 
+       描述动画的路径
+     */
+
+  @keyframes move{
+      /* from{
+          margin-left: 100px;
+          width: 100px;
+          height: 100px;
+          background-color: red;
+      }
+
+      to{
+          margin-left: 300px;
+          width: 200px;
+          height: 200px;
+          background-color: green;
+      } */
+
+      0%{
+          left: 0;
+          top: 0;
+      }
+      25%{
+          left: 300px;
+          top: 0;
+      }
+      50%{
+          left: 300px;
+          top: 300px;
+      }
+      75%{
+          left: 0;
+          top: 300px;
+      }
+      100%{
+          left: 0;
+          top:0;
+      }
+    }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

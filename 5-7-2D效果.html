@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2D效果</title>
+
+    <style>
+        
+        *{
+        margin: 0;
+        padding: 0;
+        }
+
+        ul{
+            margin: 100px auto;
+            width: 500px;
+            height: 350px;
+            border:1px solid #000;
+        }
+
+        /* 
+            transform-origin: 用来修改形变的中心点  默认的是center
+         */
+         
+        ul li{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            margin-bottom: 20px;
+            list-style: none;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            line-height: 50px;
+        }
+         li:nth-child(2){
+             /* 平移 */
+            transform: translate(100px,0)
+        }
+        li:nth-child(3){
+            /* 缩放 */
+            transform:scale(1.1,1.1);
+        }
+        li:nth-child(4){
+            /* 旋转 */
+            transform:rotate(30deg);
+        }
+        li:nth-child(5){
+            /* 综合 */
+            transform:translate(100px,0) scale(1.1,1.1) rotate(30deg);
+        }
+    </style>
+</head>
+
+<body>
+     <ul>
+         <li>普通</li>
+         <li>平移</li>
+         <li>缩放</li>
+         <li>旋转</li>
+         <li>综合</li>
+     </ul>
+</body>
+</html>
